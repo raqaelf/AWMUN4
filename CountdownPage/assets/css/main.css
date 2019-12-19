@@ -1,0 +1,88 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.clr-gold{
+    color: #deb061;
+}
+.clr-red{
+    color: #89113b;
+}
+.bg-gold{
+    background-color: #deb061;
+}
+
+/* NAVBAR */
+.navbar{
+    padding: 1.5rem;
+    transition: 0.3s;
+}
+.sticky {
+    background: #46091e;
+    z-index: 1;
+    padding: 15px;
+    transition: 0.3s;
+
+}
+.sticky .nav-link {
+    font-weight: 400;
+    transition: 0.3s;
+
+}
+.sticky .btn-regis {
+    padding: 8px 17px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.nav-link{
+    color:white!Important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.btn-regis {
+    border-radius: 4px;
+    padding: 12px 24px;
+    box-shadow: 0 3px 8px 0 rgba(44, 43, 40, 0.5), 0 1px 8px 0 rgba(24, 23, 23, 0.09);
+    font-weight: bold;
+    letter-spacing: 1.17px;
+}
+
+
+
+
+/* Header */
+#header {
+    background: url(../img/img-header.png)no-repeat;
+    background-size: cover;
+    padding: 140px 0px 55px 0px;
+}
+h1.title {
+    font-weight: 500;
+    letter-spacing: 0.17px;
+    font-size: 2.8rem;
+    line-height: 1.3;
+}
+.header-content {
+    padding-bottom: 60px;
+}
+.date{
+    letter-spacing: 1.8px;
+}
+.timer-overlay {
+    display: inline-block;
+}
+#timer {
+    color: #F6F4F3;
+    text-align: center;
+}
+.days, .hours, .minutes, .seconds {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 80px 0px 0px;
+    letter-spacing: 1px;
+    color: white;
+}
+.numbers {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
