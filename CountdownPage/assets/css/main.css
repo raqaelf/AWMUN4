@@ -10,12 +10,19 @@ body{
 .bg-gold{
     background-color: #deb061;
 }
-
+.navbar-toggler{
+    background: #e2e2e23b;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(222,176,97, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 /* NAVBAR */
 .navbar{
     padding: 1.5rem;
     transition: 0.3s;
+    z-index: 1;
 }
+
 .sticky {
     background: #46091e;
     z-index: 1;
@@ -54,6 +61,7 @@ body{
     background: url(../img/img-header.png)no-repeat;
     background-size: cover;
     padding: 140px 0px 55px 0px;
+    z-index: -1;
 }
 h1.title {
     font-weight: 500;
@@ -85,4 +93,29 @@ h1.title {
     color: white;
     font-size: 2.5em;
     font-weight: bolder;
+}
+@media only screen and (max-width: 767px) {
+    #header {
+        background: url(../img/img-header-sm.png)no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-collapse{
+        background: #46091e;
+        padding: 18px;
+    }
+    .title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .days, .hours, .minutes, .seconds {
+        margin: 0px 20px;
+    }
+    .timer-overlay {
+        display: block;
+        margin: auto;
+    }
+    .date{
+        text-align: center;
+    }
 }
