@@ -54,10 +54,9 @@ body{
     font-weight: 400;
     transition: 0.3s;
 }
-.nav-link{
-    color:white!Important;
-    font-weight: bold;
-    letter-spacing: 1px;
+.nav-link {
+    color: white!Important;
+    font-weight: 500;
 }
 .btn-regis {
     border-radius: 4px;
@@ -74,6 +73,7 @@ body{
 #header {
     background: url(../img/img-header.png)no-repeat;
     background-size: cover;
+    background-position: right;
     padding: 140px 0px 55px 0px;
     z-index: -1;
 }
