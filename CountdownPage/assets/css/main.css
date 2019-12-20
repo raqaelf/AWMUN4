@@ -16,6 +16,20 @@ body{
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(222,176,97, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: 0.1em;
+    content: "V";
+    font-weight: 400;
+    color: #deb061;
+    transform: scale(1.2,0.6);
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
 /* NAVBAR */
 .navbar{
     padding: 1.5rem;
@@ -93,6 +107,16 @@ h1.title {
     color: white;
     font-size: 2.5em;
     font-weight: bolder;
+}
+@media only screen and (max-width: 992px) {
+    .custom-col{
+        max-width: 100%;
+        flex: auto;
+    }
+    .navbar-collapse{
+        background: #46091e;
+        padding: 18px;
+    }
 }
 @media only screen and (max-width: 767px) {
     #header {
