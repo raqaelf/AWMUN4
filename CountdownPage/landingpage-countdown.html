@@ -10,16 +10,31 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets-2/css/main.css">
+    
     
     <title>AWMUN 4</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 </head>
 <body>
     <!-- NAVBAR -->
     <div id="navbars" class="navbar position-fixed w-100 navbar-expand-lg">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between" style="padding: 0px;">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/logo-awmun.png" class="d-inline-block align-top" alt="logo-awmun">
+                <img src="assets-2/img/logo-awmun.png" class="d-inline-block align-top" alt="logo-awmun">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -69,19 +84,379 @@
             </div>
             <div class="timer-overlay align-self-end">
                 <div id="timer"></div>
+            </div>  
+        </div>
+        <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+            <defs>
+                <style>
+                    .a {
+                        fill: none;
+                    }
+                    
+                    .b {
+                        clip-path: url(#a);
+                    }
+                    
+                    .c,
+                    .d {
+                        fill: #f9f9fc;
+                    }
+                    
+                    .d {
+                        opacity: 0.5;
+                        isolation: isolate;
+                    }
+                </style>
+                <clipPath id="a">
+                    <rect class="a" width="1920" height="75"></rect>
+                </clipPath>
+            </defs>
+            <title>wave</title>
+            <g class="b">
+                <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
+            </g>
+        </svg>
+    </header>
+    
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    
+                    <h1 class="about-judul clr-red">
+                        About Us
+                    </h1>
+                    <p class="isi">
+                        Asia World Model United Nations (AWMUN) III is a Model United Nations carrying the theme of The Implementation of World’s Agenda 2030. Asia World Model United Nations (AWMUN) III aims to facilitate young leaders from different places to broaden their networks and to provide a platform to share their perspectives, particularly on Sustainable Development Goals (SDGs).
+                        
+                    </p>
+                    <div class="sosmed">
+                        <a href="#" class="sosmed-item">
+                            <img src="assets-2/img/facebook.png" alt="">
+                        </a>
+                        <a href="#" class="sosmed-item">
+                            <img src="assets-2/img/instagram.png" alt="">
+                        </a>
+                        <a href="#" class="sosmed-item">
+                            <img src="assets-2/img/youtube.png" alt="">
+                        </a>
+                        <a href="#" class="sosmed-item">
+                            <img src="assets-2/img/twitter.png" alt="">
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                            <h4 class="more-than">More than</h4>
+                            <span class="counter">1251</span>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 delegates">
+                            <p class="about-text clr-red" style="font-weight: bold;font-size: 28px;">Delegates</p>
+                            <p class="about-text align-text-bottom">from 78 Countries</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Speaker -->
+    <section class="speaker">
+        <div class="container">
+            <h1 class="speaker clr-red text-center">Honourable Speaker</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="foto">
+                            <img src="assets-2/img/speaker-1.png" alt="speaker">
+                        </div>
+                        <h3 class="job">Youth Advisory Panel</h3>
+                        <h3 class="from">UNFPA Indonesia</h3>
+                        <h3 class="name">Margianta S.J.D</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="foto">
+                            <img src="assets-2/img/speaker-2.png" alt="speaker">
+                        </div>
+                        <h3 class="job">Director of United Nations</h3>
+                        <h3 class="from">Information Centre Indonesia</h3>
+                        <h3 class="name">Ms. Francyne Harrigan</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <div class="foto">
+                            <img src="assets-2/img/speaker-3.png" alt="speaker">
+                        </div>
+                        <h3 class="job">Social Media Influencer</h3>
+                        <h3 class="from">Best Delegate AWMUN I</h3>
+                        <h3 class="name">Sherly Annavita</h3>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
+        
+    </section>
     
+    <!-- PRESS -->
+    <section class="press bg-red">
+        <div class="container">
+            <h1 class="judul1 clr-gold text-center">AWMUN Press</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box2">
+                        <img src="assets-2/img/Artboard-6-1.png" alt="">
+                        <h1 class="judul">‘No Countries Should Deny their Roots’: Indigenous People Fight for their Rights</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box2">
+                        <img src="assets-2/img/Artboard-5-1.png" alt="">
+                        <h1 class="judul">CHILDREN NEED HELP: Innocent children as victims of Human Trafficking</h1>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box2">
+                        <img src="assets-2/img/Artboard-3.png" alt="">
+                        <h1 class="judul">UNWTO Recommends Programs and Guidelines for Sustainable Tourism</h1>
+                    </div>
+                </div>
+            </div>
+            <a class="view-more" href="#">View More</a>
+        </div>
+        <svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+            <defs>
+                <style>
+                    .a {
+                        fill: none;
+                    }
+                    
+                    .b {
+                        clip-path: url(#a);
+                    }
+                    
+                    .c,
+                    .d {
+                        fill: #f9f9fc;
+                    }
+                    
+                    .d {
+                        opacity: 0.5;
+                        isolation: isolate;
+                    }
+                </style>
+                <clipPath id="a">
+                    <rect class="a" width="1920" height="75"></rect>
+                </clipPath>
+            </defs>
+            <title>wave</title>
+            <g class="b">
+                <path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path>
+            </g>
+            <g class="b">
+                <path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path>
+            </g>
+        </svg>
+    </section>
+    
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="title">
+            <h1 class="clr-red text-center">BEST MOMENT</h1>
+        </div>
+        
+        <!--Carousel Gallery-->
+        <div class="carousel-gallery">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series01_activity01.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series01_activity01.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity02.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity02.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity03.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity03.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity04.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity04.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity05.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity05.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity06.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity06.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity07.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity07.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_series_activity08.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_series_activity08.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_1.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_1.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_2.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_2.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_3.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_3.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_4.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_4.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_5.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_5.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_6.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_6.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_7.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_7.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="assets-2/img/ic_venue_8.png" data-fancybox="gallery">
+                            <div class="image" style="background-image: url(assets-2/img/ic_venue_8.png)">
+                                <div class="overlay">
+                                    <em class="mdi mdi-magnify-plus"></em>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nice Words -->
     
     
     <!-- Optional JavaScript -->
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="assets-2/js/gallery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets-2/js/jquery.counterup.min.js"></script>
+    <script src="assets-2/js/countdown.js"></script>
+    <script src="assets-2/js/sticky.js"></script>
+    
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
