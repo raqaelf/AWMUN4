@@ -389,12 +389,35 @@ h1.judul {
     background: #811338;
     border-top: 5px solid #deb061;
 }
-.footer a {
-    color:white;
+.sub-footer a {
+    color:#811338;
 }
-.sub-footer{
-    background: #deb0619e;
+.sub-footer {
+    background: #deb061;
     color: #811338;
+    padding: 6px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.3s;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: 0.5rem 0;
+    margin: 1.425rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #811338;
+    background-clip: padding-box;
+    border: 1px solid rgb(222, 176, 97);
+}
+.dropdown-item{
+    transition: 0.2s;
+    color:white;
 }
 
 @media only screen and (max-width: 991px) {
@@ -412,7 +435,7 @@ h1.judul {
 }
 @media only screen and (max-width: 767px) {
     #header {
-        background: url(../img/img-header-sm.png)no-repeat;
+        /* background: url(../img/img-header-sm.png)no-repeat; */
         background-size: cover;
         background-position: center;
     }
